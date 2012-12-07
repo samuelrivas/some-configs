@@ -150,6 +150,12 @@ bindsym $mod+r mode "resize"
 # Disable focus follows mouse
 focus_follows_mouse no
 
+# Lock screen
+bindsym $mod+F10 exec xautolock -locknow
+
+# Startup xautolock
+exec xautolock -time 10 -detectsleep -locker "i3lock -n -c 000000"
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
