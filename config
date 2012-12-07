@@ -30,7 +30,7 @@ bindsym $mod+d exec dmenu_run
 bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
-bindsym $mod+odiaeresis focus right
+bindcode $mod+47 focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -42,7 +42,7 @@ bindsym $mod+Right focus right
 bindsym $mod+Shift+J move left
 bindsym $mod+Shift+K move down
 bindsym $mod+Shift+L move up
-bindsym $mod+Shift+Odiaeresis move right
+bindcode $mod+Shift+47 move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -160,6 +160,8 @@ bar {
 # Custom bindings
 # ---------------
 bindsym $mod+F10 exec xautolock -locknow
+bindsym $mod+F8  exec setxkbmap -layout se
+bindsym $mod+F9  exec setxkbmap -layout es
 
 # Programs
 # --------
