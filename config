@@ -169,6 +169,7 @@ bindsym $mod+F9  exec setxkbmap -layout es
 
 # Programs
 # --------
+exec ssh-agent
 exec xautolock -time 10 -detectsleep -locker "i3lock -n -c 000000 -d"
 exec dropbox start
 exec google-chrome
