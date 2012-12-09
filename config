@@ -179,3 +179,4 @@ exec google-chrome
 exec xchat-gnome
 exec telepathy-indicator
 exec empathy
+exec nm-applet
