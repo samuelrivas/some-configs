@@ -164,8 +164,8 @@ bar {
 # Custom bindings
 # ---------------
 bindsym $mod+F10 exec xautolock -locknow
-bindsym $mod+F8  exec setxkbmap -layout se
-bindsym $mod+F9  exec setxkbmap -layout es
+bindcode $mod+48  exec setxkbmap -layout se
+bindcode $mod+51  exec setxkbmap -layout es
 bindsym XF86AudioMute exec pactl set-sink-mute 0 1
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 -- '+5%' && pactl set-sink-mute 0 0
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -- '-5%' && pactl set-sink-mute 0 0
