@@ -182,3 +182,4 @@ exec telepathy-indicator
 exec empathy
 exec nm-applet
 exec xsetroot -solid "#000000"
+exec unclutter -idle 2
