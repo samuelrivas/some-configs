@@ -175,7 +175,6 @@ bindsym $mod+b workspace back_and_forth
 # Programs
 # --------
 exec xset dpms 540 540 540
-exec ssh-agent
 exec xautolock -time 10 -detectsleep -locker "i3lock -n -c 000000 -d"
 exec dropbox start
 exec google-chrome
