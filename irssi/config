@@ -272,3 +272,4 @@ settings = {
     bell_beeps = "yes";
   };
 };
+hilights = ( { text = "samuel"; nick = "yes"; word = "yes"; } );
