@@ -270,6 +270,7 @@ settings = {
     beep_when_away = "yes";
     beep_msg_level = "MSGS NOTICES DCC DCCMSGS HILIGHT";
     bell_beeps = "yes";
+    theme = "solarized-universal";
   };
 };
 hilights = ( { text = "samuel"; nick = "yes"; word = "yes"; } );
