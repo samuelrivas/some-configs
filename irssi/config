@@ -274,3 +274,4 @@ settings = {
   };
 };
 hilights = ( { text = "samuel"; nick = "yes"; word = "yes"; } );
+ignores = ( { level = "JOINS PARTS QUITS"; } );
