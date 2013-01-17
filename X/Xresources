@@ -107,6 +107,7 @@ xterm*saveLines:               10240
 xterm*scrollTtyOutput:         false
 xterm*scrollKey:               true
 xterm*bellIsUrgent:            true
+xterm*highlightSelection:      true
 xterm*termName:                xterm-256color
 
 ! emacs config
