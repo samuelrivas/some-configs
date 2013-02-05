@@ -103,6 +103,7 @@ xterm*color15:                 S_base3
 xterm*faceName:                Ubuntu Mono
 xterm*faceSize:                13
 xterm*eightBitInput:           false
+xterm*metaSendsEscape:         true
 xterm*saveLines:               10240
 xterm*scrollTtyOutput:         false
 xterm*scrollKey:               true
