@@ -73,6 +73,11 @@ URxvt*color15:                 S_base3
 URxvt*scrollBar:               false
 URxvt*urgentOnBell:            true
 URxvt*font:                    xft:Ubuntu Mono-13
+URxvt*letterSpace:             -1 ! Workaround a known bug
+
+URxvt*perl-ext-common:         default,matcher
+URxvt*urlLauncher:             google-chrome
+URxvt*matcher.button:          1
 
 ! xterm config
 xterm*background:              S_base03
