@@ -3,8 +3,17 @@ set imap_user = $MUTT_GMAIL_USER
 set imap_pass = $MUTT_GMAIL_PASS
 set spoolfile = "imaps://imap.gmail.com:993/INBOX"
 set folder = "imaps://imap.gmail.com:993"
-set record="imaps://imap.gmail.com/[Gmail]/Sent Mail"
-set postponed="imaps://imap.gmail.com/[Gmail]/Drafts"
+
+# We don't want to record as the SMTP server does it for us already
+# set record="+[Google Gmail]/Sent Mail"
+set postponed="+[Google Mail]/Drafts"
 set header_cache="~/.mutt/cache/headers"
 set message_cachedir="~/.mutt/cache/bodies"
 set certificate_file="~/.mutt/certificates"
+set sendmail = "/usr/bin/msmtp"
+
+# Personal taste
+# --------------
+set copy = no
+set sort=threads
+# set imap_check_subscribed
