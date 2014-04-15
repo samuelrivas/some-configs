@@ -274,6 +274,11 @@ settings = {
   };
 };
 hilights = (
-  { text = "[^r]samuel"; nick = "yes"; word = "yes"; regexp = "yes"; }
+  {
+    text = "\\bsamuel\\.?(rivas)?\\b";
+    nick = "yes";
+    word = "yes";
+    regexp = "yes";
+  }
 );
 ignores = ( { level = "JOINS PARTS QUITS NICKS"; } );
