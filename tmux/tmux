@@ -1,2 +1,3 @@
+unbind -n Tab
 setw -g status off
 set -g default-terminal "screen-256color"
