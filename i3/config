@@ -177,7 +177,6 @@ exec xautolock -time 10 -detectsleep -locker "i3lock -n -c 000000 -d"
 exec gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh
 exec dropbox start
 exec telepathy-indicator
-exec empathy
 exec nm-applet
 exec xsetroot -solid "#000000"
 exec unclutter -idle 2
