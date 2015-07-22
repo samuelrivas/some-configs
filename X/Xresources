@@ -87,6 +87,9 @@ xterm*fadeColor:               S_base03
 xterm*cursorColor:             S_base1
 xterm*pointerColorBackground:  S_base01
 xterm*pointerColorForeground:  S_base1
+xterm*on4Clicks:               All
+xterm*printerCommand:          xterm -e sh -c 'less -r <&3' 3<&0
+xterm*translations:            #override Ctrl Meta<Key>p: print-everything()
 
 xterm*color0:                  S_base02
 xterm*color1:                  S_red
