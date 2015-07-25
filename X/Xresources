@@ -90,6 +90,8 @@ xterm*pointerColorForeground:  S_base1
 xterm*on4Clicks:               All
 xterm*printerCommand:          xterm -e sh -c 'less -r <&3' 3<&0
 xterm*translations:            #override Ctrl Meta<Key>p: print-everything()
+xterm*charClass:               33:48,35:48,37-38:48,43-47:48,58:48,61:48,63-64:48,95:48,126:48
+
 
 xterm*color0:                  S_base02
 xterm*color1:                  S_red
