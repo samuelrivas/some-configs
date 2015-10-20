@@ -268,7 +268,7 @@ settings = {
   "fe-common/core" = {
     beep_when_window_active = "yes";
     beep_when_away = "yes";
-    beep_msg_level = "MSGS NOTICES DCC DCCMSGS HILIGHT";
+    beep_msg_level = "MSGS DCC DCCMSGS HILIGHT";
     bell_beeps = "yes";
     theme = "solarized-universal";
   };
@@ -281,4 +281,4 @@ hilights = (
     regexp = "yes";
   }
 );
-ignores = ( { level = "JOINS PARTS QUITS NICKS"; } );
+ignores = ( { level = "JOINS PARTS QUITS MODES NICKS"; } );
