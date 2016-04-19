@@ -184,4 +184,4 @@ exec dropbox start
 exec telepathy-indicator
 exec nm-applet
 exec xsetroot -solid "#000000"
-exec unclutter -idle 2
+exec unclutter -idle 2 -noevents
