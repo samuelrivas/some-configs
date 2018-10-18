@@ -170,18 +170,15 @@ bindsym XF86MonBrightnessDown exec /usr/bin/xbacklight -set 0
 
 bindsym $mod+b workspace back_and_forth
 
-bindsym $mod+p move workspace to output right
-bindsym $mod+o move workspace to output left
+bindsym $mod+p move workspace to output up
+bindsym $mod+o move workspace to output down
 
 # Programs
 # --------
 exec xrdb ~/.Xresources
-exec setxkbmap -option '' -option kpd1:dot -option 'grp:shift_caps_toggle,grp_led:scroll', 'es,se'
 exec xset dpms 540 540 540
 exec xautolock -time 10 -detectsleep -locker "i3lock -n -c 000000 -d"
 exec gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh
 exec dropbox start
-exec telepathy-indicator
-exec nm-applet
 exec xsetroot -solid "#000000"
-exec unclutter -idle 2 -noevents
+exec unclutter -idle 2
