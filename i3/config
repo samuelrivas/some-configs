@@ -165,6 +165,7 @@ bindsym $mod+F10 exec xautolock -locknow
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 '+5%'
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 '-5%'
+bindsym XF86AudioMicMute exec pactl set-source-mute 1 toggle
 bindsym XF86MonBrightnessUp exec /usr/bin/xbacklight -set 80
 bindsym XF86MonBrightnessDown exec /usr/bin/xbacklight -set 0
 
