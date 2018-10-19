@@ -122,5 +122,5 @@ xterm*highlightSelection:      true
 xterm*termName:                xterm-256color
 
 ! emacs config
-Emacs.font: Ubuntu Mono-14
+Emacs.font: Ubuntu Mono-16
 
