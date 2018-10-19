@@ -72,7 +72,7 @@ URxvt*color15:                 S_base3
 
 URxvt*scrollBar:               false
 URxvt*urgentOnBell:            true
-URxvt*font:                    xft:Ubuntu Mono-14
+URxvt*font:                    xft:Ubuntu Mono-16
 URxvt*letterSpace:             -1 ! Workaround a known bug
 
 URxvt*perl-ext-common:         default,matcher
@@ -111,7 +111,7 @@ xterm*color14:                 S_base1
 xterm*color15:                 S_base3
 
 xterm*faceName:                Ubuntu Mono
-xterm*faceSize:                14
+xterm*faceSize:                16
 xterm*eightBitInput:           false
 xterm*metaSendsEscape:         true
 xterm*saveLines:               10240
@@ -123,3 +123,4 @@ xterm*termName:                xterm-256color
 
 ! emacs config
 Emacs.font: Ubuntu Mono-14
+
