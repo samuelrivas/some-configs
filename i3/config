@@ -183,3 +183,4 @@ exec gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh
 exec dropbox start
 exec xsetroot -solid "#000000"
 exec unclutter -idle 2
+exec dunst -conf ~/.dunstrc
