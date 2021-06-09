@@ -178,7 +178,7 @@ bindsym $mod+o move workspace to output down
 # --------
 exec xrdb ~/.Xresources
 exec xset dpms 300 300 300
-exec xautolock -time 10 -detectsleep -locker "i3lock -n -c 000000 -d"
+exec xautolock -time 5 -notify 30 -notifier "notify-send \"Locking in 30 seconds\"" -detectsleep -locker "i3lock -n -c 000000 -d"
 exec gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh
 exec dropbox start
 exec xsetroot -solid "#000000"
