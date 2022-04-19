@@ -4,3 +4,4 @@ nohup xautolock -time 5 -notify 30 -notifier "notify-send \"Locking in 30 second
 xrdb ~/.Xresources
 unclutter -idle 2 &
 setxkbmap se,es,us -option grp:shift_caps_toggle
+nm-applet &
