@@ -2,4 +2,4 @@ echo $HOME > /tmp/maybeisthis
 xset dpms 300 300 300
 nohup xautolock -time 5 -notify 30 -notifier "notify-send \"Locking in 30 seconds\"" -detectsleep -locker "i3lock -n -c 000000 -d" > /tmp/xautolock.log &
 xrdb ~/.Xresources
-unclutter -idle 2 2&>1 > /tmp/unclutter.log &
+unclutter -idle 2 &
