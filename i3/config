@@ -178,10 +178,12 @@ bindsym $mod+Shift+d exec dunstctl close
 
 # Programs
 # --------
-exec xrdb ~/.Xresources
+# exec xrdb ~/.Xresources
 exec xset dpms 300 300 300
-exec xautolock -time 5 -notify 30 -notifier "notify-send \"Locking in 30 seconds\"" -detectsleep -locker "i3lock -n -c 000000 -d"
-exec gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh
 exec xsetroot -solid "#000000"
-exec unclutter -idle 2
-exec dunst -conf ~/.dunstrc
+
+## These were moved to .xsessionrc
+# exec xautolock -time 5 -notify 30 -notifier "notify-send \"Locking in 30 seconds\"" -detectsleep -locker "i3lock -n -c 000000 -d"
+# exec gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh
+# exec unclutter -idle 2
+# exec dunst -conf ~/.dunstrc
