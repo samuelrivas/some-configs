@@ -1,0 +1,31 @@
+{
+    "emacs-mcx.strictEmacsMove": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "github.copilot.enable": {
+        "plaintext": "true",
+        "markdown": "true"
+    },
+    "nix.serverSettings": {
+        "nil": {
+            "formatting": {
+                "command": ["alejandra"]
+            }
+        }
+    },
+    "nix.formatterPath": "alejandra",
+    "nix.serverPath": "nil",
+    "nix.enableLanguageServer": true,
+    "editor.guides.indentation": false,
+    "editor.lineNumbers": "off",
+    "editor.minimap.enabled": false,
+    "window.menuBarVisibility": "toggle",
+    "python.languageServer": "Pylance",
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.editor.showTabs": "single",
+    "workbench.activityBar.location": "hidden",
+    "editor.wordWrap": "on",
+    "editor.renderWhitespace": "trailing",
+    "editor.fontSize": 15,
+    "editor.formatOnSaveMode": "modifications",
+    "editor.formatOnSave": true
+}
