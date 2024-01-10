@@ -27,5 +27,6 @@
     "editor.renderWhitespace": "trailing",
     "editor.fontSize": 15,
     "editor.formatOnSaveMode": "modifications",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "rewrap.wrappingColumn": 80
 }
