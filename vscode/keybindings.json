@@ -1,4 +1,27 @@
 // Place your key bindings in this file to override the defaults
 [
-    { "key": "alt+;", "command": "editor.action.commentLine" }
+    {
+        "key": "alt+;",
+        "command": "editor.action.commentLine"
+    },
+    {
+        "key": "alt+.",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "f12",
+        "command": "-editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "alt+,",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "ctrl+alt+-",
+        "command": "-workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    }
 ]
