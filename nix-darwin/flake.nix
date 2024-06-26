@@ -1,48 +1,89 @@
 {
-  "nodes": {
-    "nix-darwin": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1719128254,
-        "narHash": "sha256-I7jMpq0CAOZA/i70+HDQO/ulLttyQu/K70cSESiMX7A=",
-        "owner": "LnL7",
-        "repo": "nix-darwin",
-        "rev": "50581970f37f06a4719001735828519925ef8310",
-        "type": "github"
-      },
-      "original": {
-        "owner": "LnL7",
-        "repo": "nix-darwin",
-        "type": "github"
-      }
-    },
-    "nixpkgs": {
-      "locked": {
-        "lastModified": 1719082008,
-        "narHash": "sha256-jHJSUH619zBQ6WdC21fFAlDxHErKVDJ5fpN0Hgx4sjs=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "9693852a2070b398ee123a329e68f0dab5526681",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "nixpkgs-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "root": {
-      "inputs": {
-        "nix-darwin": "nix-darwin",
-        "nixpkgs": "nixpkgs"
-      }
-    }
-  },
-  "root": "root",
-  "version": 7
+  description = "Example Darwin system flake";
+
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nix-darwin.url = "github:LnL7/nix-darwin";
+    nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
+    nix.url = "github:NixOS/nix/2.20.6";
+  };
+
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nix }:
+  let
+    configuration = { pkgs, ... }: {
+      # List packages installed in system profile. To search by name, run:
+      # $ nix-env -qaP | grep wget
+      environment.systemPackages =
+        [ pkgs.vim
+        ];
+
+      # Auto upgrade nix package and the daemon service.
+      services.nix-daemon.enable = true;
+      # nix.package = pkgs.nix;
+
+      # Necessary for using flakes on this system.
+      nix.settings.experimental-features = "nix-command flakes";
+
+      # Create /etc/zshrc that loads the nix-darwin environment.
+      programs.zsh.enable = true;  # default shell on catalina
+      programs.fish.enable = true;
+
+      # Set Git commit hash for darwin-version.
+      system.configurationRevision = self.rev or self.dirtyRev or null;
+
+      # Used for backwards compatibility, please read the changelog before changing.
+      # $ darwin-rebuild changelog
+      system.stateVersion = 4;
+
+      # The platform the configuration will be used on.
+      nixpkgs.hostPlatform = "aarch64-darwin";
+
+      # Extra config by sam
+      # -------------------
+      security.pam.enableSudoTouchIdAuth = true;
+      environment = {
+        shells = [ pkgs.zsh pkgs.fish pkgs.bashInteractive ];
+        loginShell = pkgs.fish;
+        variables = {
+          EDITOR = "emacs -nw";
+        };
+      };
+      nix = {
+        # Workaround as the installer installs nix 2.20 withs suports profile
+        # version 3, but it is not available in nixpkgs at this moment
+        package = nix.outputs.packages.aarch64-darwin.nix;
+      };
+      nix.settings.sandbox = "relaxed";
+      nixpkgs.config = {
+        allowUnfree = true;
+      };
+      services = {
+        yabai.enable = true;
+      };
+      system = {
+        defaults = {
+          NSGlobalDomain = {
+            InitialKeyRepeat = 15;
+            KeyRepeat = 2;
+            "com.apple.swipescrolldirection" = false;
+          };
+          dock.autohide = true;
+        };
+        keyboard = {
+          enableKeyMapping = true;
+          swapLeftCommandAndLeftAlt = true;
+        };
+      };
+    };
+  in
+  {
+    # Build darwin flake using:
+    # $ darwin-rebuild build --flake .#KLF9314XML
+    darwinConfigurations."KLF9314XML" = nix-darwin.lib.darwinSystem {
+      modules = [ configuration ];
+    };
+
+    # Expose the package set, including overlays, for convenience.
+    darwinPackages = self.darwinConfigurations."KLF9314XML".pkgs;
+  };
 }
