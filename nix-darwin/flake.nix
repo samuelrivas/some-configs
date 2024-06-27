@@ -58,7 +58,20 @@
         allowUnfree = true;
       };
       services = {
-        yabai.enable = true;
+        yabai = {
+          enable = true;
+          config = {
+            layout = "bsp";
+            mouse_follows_focus = "on";
+            window_placement = "second_child";
+            mouse_drop_action = "swap";
+          };
+        };
+        skhd = {
+          enable = true;
+          skhdConfig = ''
+          '';
+        };
       };
       system = {
         defaults = {
