@@ -15,6 +15,8 @@
       # $ nix-env -qaP | grep wget
       environment.systemPackages =
         [ pkgs.vim
+          pkgs.alacritty
+          pkgs.skhd # just to debug in the command line
         ];
 
       # Auto upgrade nix package and the daemon service.
