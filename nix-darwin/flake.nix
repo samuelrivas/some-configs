@@ -6,9 +6,10 @@
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     nix.url = "github:NixOS/nix/2.20.6";
+    sams-monorepo.url = "github:samuelrivas/monorepo/emacsmacos";
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nix, sams-monorepo }:
   let
     configuration = { pkgs, ... }: {
       # List packages installed in system profile. To search by name, run:
@@ -17,6 +18,7 @@
         [ pkgs.vim
           pkgs.alacritty
           pkgs.skhd # just to debug in the command line
+          sams-monorepo.outputs.packages.aarch64-darwin.my-emacs
         ];
 
       # Auto upgrade nix package and the daemon service.
