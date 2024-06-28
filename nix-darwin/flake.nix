@@ -68,10 +68,28 @@
             window_placement = "second_child";
             mouse_drop_action = "swap";
           };
+          extraConfig = ''
+            yabai -m rule --add app="^System Settings$" manage=off
+          '';
         };
         skhd = {
           enable = true;
           skhdConfig = ''
+            # Valid modifier names: fn, cmd, ctrl, alt (option), shift
+            # I have cmd and alt swapped in the os
+
+            ## Yabai keys
+            cmd - j : yabai -m window --focus west
+            cmd - k : yabai -m window --focus south
+            cmd - l : yabai -m window --focus north
+            cmd - 0x29 : yabai -m window --focus east
+
+            shift + cmd - j : yabai -m window --warp west
+            shift + cmd - k : yabai -m window --warp south
+            shift + cmd - l : yabai -m window --warp north
+            shift + cmd - 0x29 : yabai -m window --warp east
+
+            shift + cmd - space : yabai -m window --toggle float --grid 4:4:1:1:2:2
           '';
         };
       };
