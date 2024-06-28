@@ -90,6 +90,9 @@
             shift + cmd - 0x29 : yabai -m window --warp east
 
             shift + cmd - space : yabai -m window --toggle float --grid 4:4:1:1:2:2
+
+            ## Quick launch a terminal
+            cmd - return : alacritty
           '';
         };
       };
