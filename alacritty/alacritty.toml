@@ -7,3 +7,10 @@ decorations = "none"
 padding = {x = 5, y = 5}
 dynamic_padding = true
 option_as_alt = "OnlyLeft"
+
+[keyboard]
+bindings = [
+  # remap from alt to command so that it matches with emacs and linux
+  { key = "b", mods = "Command", chars = "\U0000001bb" },
+  { key = "f", mods = "Command", chars = "\U0000001bf" },
+]
