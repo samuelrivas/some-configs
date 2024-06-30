@@ -78,29 +78,29 @@
           enable = true;
           skhdConfig = ''
             # Valid modifier names: fn, cmd, ctrl, alt (option), shift
-            # I have cmd and alt swapped in the os
 
             ## Yabai keys
-            cmd - j : yabai -m window --focus west
-            cmd - k : yabai -m window --focus south
-            cmd - l : yabai -m window --focus north
-            cmd - 0x29 : yabai -m window --focus east
+            alt - j : yabai -m window --focus west
+            alt - k : yabai -m window --focus south
+            alt - l : yabai -m window --focus north
+            alt - 0x29 : yabai -m window --focus east
 
-            shift + cmd - j : yabai -m window --warp west
-            shift + cmd - k : yabai -m window --warp south
-            shift + cmd - l : yabai -m window --warp north
-            shift + cmd - 0x29 : yabai -m window --warp east
+            shift + alt - j : yabai -m window --warp west
+            shift + alt - k : yabai -m window --warp south
+            shift + alt - l : yabai -m window --warp north
+            shift + alt - 0x29 : yabai -m window --warp east
 
-            shift + cmd - space : yabai -m window --toggle float --grid 4:4:1:1:2:2
+            shift + alt - space : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
             ## Quick launch a terminal
-            cmd - return : alacritty
+            alt - return : alacritty
           '';
         };
       };
       system = {
         defaults = {
           NSGlobalDomain = {
+            AppleInterfaceStyle = "Dark";
             InitialKeyRepeat = 15;
             KeyRepeat = 2;
             "com.apple.swipescrolldirection" = false;
@@ -109,7 +109,7 @@
         };
         keyboard = {
           enableKeyMapping = true;
-          swapLeftCommandAndLeftAlt = true;
+          swapLeftCommandAndLeftAlt = false;
         };
       };
     };
