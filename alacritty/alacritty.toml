@@ -1,3 +1,9 @@
 import = [
        "~/.config/alacritty/solarized.toml",
   ]
+
+[window]
+decorations = "none"
+padding = {x = 5, y = 5}
+dynamic_padding = true
+option_as_alt = "OnlyLeft"
