@@ -13,4 +13,5 @@ bindings = [
   # remap from alt to command so that it matches with emacs and linux
   { key = "b", mods = "Command", chars = "\U0000001bb" },
   { key = "f", mods = "Command", chars = "\U0000001bf" },
+  { key = "d", mods = "Command", chars = "\U0000001bd" },
 ]
