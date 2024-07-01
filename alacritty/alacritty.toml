@@ -15,3 +15,6 @@ bindings = [
   { key = "f", mods = "Command", chars = "\U0000001bf" },
   { key = "d", mods = "Command", chars = "\U0000001bd" },
 ]
+
+[mouse]
+hide_when_typing = true
