@@ -69,6 +69,8 @@
             mouse_follows_focus = "on";
             window_placement = "second_child";
             mouse_drop_action = "swap";
+            mouse_modifier = "alt";
+            mouse_action1 = "move";
           };
           extraConfig = ''
             yabai -m rule --add app="^System Settings$" manage=off
