@@ -16,6 +16,9 @@ bindings = [
   { key = "d", mods = "Command", chars = "\U0000001bd" },
   { key = "u", mods = "Command", chars = "\U0000001bu" },
   { key = "Backspace", mods = "Command", chars = "\U0000001b\U00000008" },
+  { key = "w", mods = "Control", action = "Copy" },
+  { key = "w", mods = "Command", action = "Copy" },
+  { key = "y", mods = "Control", action = "Paste" },
 ]
 
 [mouse]
