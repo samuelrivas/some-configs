@@ -14,6 +14,7 @@ bindings = [
   { key = "b", mods = "Command", chars = "\U0000001bb" },
   { key = "f", mods = "Command", chars = "\U0000001bf" },
   { key = "d", mods = "Command", chars = "\U0000001bd" },
+  { key = "u", mods = "Command", chars = "\U0000001bu" },
   { key = "Backspace", mods = "Command", chars = "\U0000001b\U00000008" },
 ]
 
