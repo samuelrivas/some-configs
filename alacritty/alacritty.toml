@@ -23,6 +23,9 @@ bindings = [
 
   { key = "v", mods = "Control", action = "ScrollHalfPageUp" },
   { key = "v", mods = "Command", action = "ScrollHalfPageDown" },
+
+  { key = "s", mods = "Control", action = "SearchForward" },
+  { key = "r", mods = "Control", action = "SearchBackward" },
 ]
 
 [mouse]
