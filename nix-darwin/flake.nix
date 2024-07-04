@@ -6,7 +6,7 @@
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     nix.url = "github:NixOS/nix/2.20.6";
-    sams-monorepo.url = "github:samuelrivas/monorepo/emacsmacos";
+    sams-monorepo.url = "github:samuelrivas/monorepo";
   };
 
   outputs = inputs@{ self, nix-darwin, nixpkgs, nix, sams-monorepo }:

@@ -95,11 +95,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1719128254,
-        "narHash": "sha256-I7jMpq0CAOZA/i70+HDQO/ulLttyQu/K70cSESiMX7A=",
+        "lastModified": 1719845423,
+        "narHash": "sha256-ZLHDmWAsHQQKnmfyhYSHJDlt8Wfjv6SQhl2qek42O7A=",
         "owner": "LnL7",
         "repo": "nix-darwin",
-        "rev": "50581970f37f06a4719001735828519925ef8310",
+        "rev": "ec12b88104d6c117871fad55e931addac4626756",
         "type": "github"
       },
       "original": {
@@ -174,11 +174,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1719317636,
-        "narHash": "sha256-bu0xbu2Z6DDzA9LGV81yJunIti6r7tjUImeR8orAL/I=",
+        "lastModified": 1720058333,
+        "narHash": "sha256-gM2RCi5XkxmcsZ44pUkKIYBiBMfZ6u7MdcZcykmccrs=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "9c513fc6fb75142f6aec6b7545cb8af2236b80f5",
+        "rev": "6842b061970bf96965d66fcc86a28e1f719aae95",
         "type": "github"
       },
       "original": {
@@ -219,16 +219,15 @@
         "vscode-extensions": "vscode-extensions"
       },
       "locked": {
-        "lastModified": 1719604920,
-        "narHash": "sha256-qVUikeBncUC/BXZBz/LCLHO6VN22anOltn1C3KCD4F4=",
+        "lastModified": 1720084121,
+        "narHash": "sha256-227/3SXqCY3+54CsdPzP3We03fuXJ4mlwyvh0Vdky1w=",
         "owner": "samuelrivas",
         "repo": "monorepo",
-        "rev": "3e95379631c8f068b7f432d3c99d38cd94326248",
+        "rev": "950a4fc5d1e21cefbba64963dc734576ba99f25f",
         "type": "github"
       },
       "original": {
         "owner": "samuelrivas",
-        "ref": "emacsmacos",
         "repo": "monorepo",
         "type": "github"
       }
