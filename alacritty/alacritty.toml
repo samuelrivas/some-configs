@@ -34,3 +34,6 @@ bindings = [
 
 [mouse]
 hide_when_typing = true
+
+[font]
+size = 12
