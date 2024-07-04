@@ -18,6 +18,7 @@
         [ pkgs.vim
           pkgs.alacritty
           pkgs.skhd # just to debug in the command line
+          pkgs.itsycal
           sams-monorepo.outputs.packages.aarch64-darwin.my-emacs
         ];
 
