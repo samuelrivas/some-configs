@@ -26,6 +26,10 @@ bindings = [
 
   { key = "s", mods = "Control", action = "SearchForward" },
   { key = "r", mods = "Control", action = "SearchBackward" },
+
+  { key = "=", mods = "Control", action = "IncreaseFontSize" },
+  { key = "-", mods = "Control", action = "DecreaseFontSize" },
+  { key = "0", mods = "Control", action = "ResetFontSize" },
 ]
 
 [mouse]
