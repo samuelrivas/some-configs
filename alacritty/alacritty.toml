@@ -1,0 +1,39 @@
+import = [
+       "~/.config/alacritty/solarized.toml",
+  ]
+
+[window]
+decorations = "none"
+padding = {x = 5, y = 5}
+dynamic_padding = true
+option_as_alt = "OnlyLeft"
+
+[keyboard]
+bindings = [
+  # remap from alt to command so that it matches with emacs and linux
+  { key = "b", mods = "Command", chars = "\U0000001bb" },
+  { key = "f", mods = "Command", chars = "\U0000001bf" },
+  { key = "d", mods = "Command", chars = "\U0000001bd" },
+  { key = "u", mods = "Command", chars = "\U0000001bu" },
+  { key = "Backspace", mods = "Command", chars = "\U0000001b\U00000008" },
+
+  { key = "w", mods = "Control", action = "Copy" },
+  { key = "w", mods = "Command", action = "Copy" },
+  { key = "y", mods = "Control", action = "Paste" },
+
+  { key = "v", mods = "Control", action = "ScrollHalfPageUp" },
+  { key = "v", mods = "Command", action = "ScrollHalfPageDown" },
+
+  { key = "s", mods = "Control", action = "SearchForward" },
+  { key = "r", mods = "Control", action = "SearchBackward" },
+
+  { key = "=", mods = "Control", action = "IncreaseFontSize" },
+  { key = "-", mods = "Control", action = "DecreaseFontSize" },
+  { key = "0", mods = "Control", action = "ResetFontSize" },
+]
+
+[mouse]
+hide_when_typing = true
+
+[font]
+size = 12
