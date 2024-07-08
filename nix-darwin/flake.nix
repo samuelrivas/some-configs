@@ -103,7 +103,7 @@
             shift + alt - 7 : yabai -m window --space 7
             shift + alt - 8 : yabai -m window --space 8
             shift + alt - 9 : yabai -m window --space 9
-            shift + alt - 0 : yabai -m window --space 0
+            shift + alt - 0 : yabai -m window --space 10
 
             alt - f : yabai -m window --toggle zoom-fullscreen
 
