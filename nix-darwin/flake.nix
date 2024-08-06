@@ -58,7 +58,10 @@
         # version 3, but it is not available in nixpkgs at this moment
         package = nix.outputs.packages.aarch64-darwin.nix;
       };
-      nix.settings.sandbox = "relaxed";
+
+      # XXX: Sandbox hits a limit in macos: https://github.com/NixOS/nix/issues/4119
+      nix.settings.sandbox = false;
+
       nixpkgs.config = {
         allowUnfree = true;
       };
