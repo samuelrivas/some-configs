@@ -15,14 +15,20 @@
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
       environment.systemPackages =
-        [ pkgs.vim
-          pkgs.alacritty
+        [ # Some are commented out as I installed them with brew isntead
+          # pkgs.vim
+          # pkgs.alacritty
           pkgs.skhd # just to debug in the command line
           sams-monorepo.outputs.packages.aarch64-darwin.my-emacs
         ];
 
-      # Auto upgrade nix package and the daemon service.
-      services.nix-daemon.enable = true;
+      services = {
+        # Auto upgrade nix package and the daemon service.
+        nix-daemon.enable = true;
+
+        # I didn't get this to work from nix, brew does work
+        # karabiner-elements.enable = true;
+      };
       # nix.package = pkgs.nix;
 
       # Necessary for using flakes on this system.
