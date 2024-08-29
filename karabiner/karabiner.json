@@ -8,13 +8,14 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Swap control and command, unless on emacs",
+                        "description": "Swap control and command, unless on emacs,vscode or alacritty",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^org\\.gnu\\.Emacs$"
+                                            "^org\\.gnu\\.Emacs$",
+                                            "^com\\.microsoft\\.VSCodeInsiders$"
                                         ],
                                         "file_paths": ["/alacritty$"],
                                         "type": "frontmost_application_unless"
@@ -28,7 +29,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^org\\.gnu\\.Emacs$"
+                                            "^org\\.gnu\\.Emacs$",
+                                            "^com\\.microsoft\\.VSCodeInsiders$"
                                         ],
                                         "file_paths": ["/alacritty$"],
                                         "type": "frontmost_application_unless"
