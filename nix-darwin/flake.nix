@@ -18,8 +18,8 @@
         [ # Some are commented out as I installed them with brew isntead
           # pkgs.vim
           # pkgs.alacritty
-          pkgs.skhd # just to debug in the command line
-          sams-monorepo.outputs.packages.aarch64-darwin.my-emacs
+          # pkgs.skhd # just to debug in the command line
+          # sams-monorepo.outputs.packages.aarch64-darwin.my-emacs
         ];
 
       services = {
