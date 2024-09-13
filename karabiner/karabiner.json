@@ -1,9 +1,6 @@
 {
     "profiles": [
-        {
-            "name": "Empty profile",
-            "selected": true
-        },
+        { "name": "Empty profile" },
         {
             "complex_modifications": {
                 "rules": [
@@ -15,7 +12,7 @@
                                     {
                                         "bundle_identifiers": [
                                             "^org\\.gnu\\.Emacs$",
-                                            "^com\\.microsoft\\.VSCodeInsiders$"
+                                            "^com\\.microsoft\\.VSCode(Insiders)?$"
                                         ],
                                         "file_paths": ["/alacritty$"],
                                         "type": "frontmost_application_unless"
@@ -30,7 +27,7 @@
                                     {
                                         "bundle_identifiers": [
                                             "^org\\.gnu\\.Emacs$",
-                                            "^com\\.microsoft\\.VSCodeInsiders$"
+                                            "^com\\.microsoft\\.VSCode(Insiders)?$"
                                         ],
                                         "file_paths": ["/alacritty$"],
                                         "type": "frontmost_application_unless"
@@ -44,7 +41,8 @@
                     }
                 ]
             },
-            "name": "Swap control and command"
+            "name": "Swap control and command",
+            "selected": true
         }
     ]
 }

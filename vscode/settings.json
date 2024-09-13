@@ -25,8 +25,15 @@
     "workbench.activityBar.location": "hidden",
     "editor.wordWrap": "on",
     "editor.renderWhitespace": "trailing",
-    "editor.fontSize": 15,
     "editor.formatOnSaveMode": "modifications",
     "editor.formatOnSave": true,
-    "rewrap.wrappingColumn": 80
+    "rewrap.wrappingColumn": 80,
+    "emacs-mcx.useMetaPrefixMacCmd": true,
+    "cSpell.userWords": [
+        "spacelift"
+    ],
+    "window.restoreWindows": "none",
+    "window.openFoldersInNewWindow": "on",
+    "editor.fontSize": 13,
+    "opa.dependency_paths.opa": "/Users/s.rivas-gonzalez/opa"
 }
