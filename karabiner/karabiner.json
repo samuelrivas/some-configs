@@ -18,7 +18,10 @@
                                         "type": "frontmost_application_unless"
                                     }
                                 ],
-                                "from": { "key_code": "left_control" },
+                                "from": {
+                                    "key_code": "left_control",
+                                    "modifiers": { "optional": ["any"] }
+                                },
                                 "to": [{ "key_code": "left_command" }],
                                 "type": "basic"
                             },
@@ -33,7 +36,10 @@
                                         "type": "frontmost_application_unless"
                                     }
                                 ],
-                                "from": { "key_code": "left_command" },
+                                "from": {
+                                    "key_code": "left_command",
+                                    "modifiers": { "optional": ["any"] }
+                                },
                                 "to": [{ "key_code": "left_control" }],
                                 "type": "basic"
                             }
