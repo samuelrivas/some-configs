@@ -5,7 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
-    nix.url = "github:NixOS/nix/2.20.6";
+    # nix.url = "github:NixOS/nix/2.20.6";
     sams-monorepo.url = "github:samuelrivas/monorepo";
   };
 
@@ -29,7 +29,13 @@
         # I didn't get this to work from nix, brew does work
         # karabiner-elements.enable = true;
       };
-      # nix.package = pkgs.nix;
+      # nix = {
+      #   # Workaround as the installer installs nix 2.20 withs suports profile
+      #   # version 3, but it is not available in nixpkgs at this moment
+      #   package = nix.outputs.packages.aarch64-darwin.nix;
+      # };
+
+      nix.package = pkgs.nix;
 
       # Necessary for using flakes on this system.
       nix.settings.experimental-features = "nix-command flakes";
@@ -58,11 +64,6 @@
           EDITOR = "emacs -nw";
         };
       };
-      nix = {
-        # Workaround as the installer installs nix 2.20 withs suports profile
-        # version 3, but it is not available in nixpkgs at this moment
-        package = nix.outputs.packages.aarch64-darwin.nix;
-      };
 
       # XXX: Sandbox hits a limit in macos: https://github.com/NixOS/nix/issues/4119
       nix.settings.sandbox = false;
@@ -75,7 +76,7 @@
           enable = true;
           config = {
             layout = "bsp";
-            mouse_follows_focus = "on";
+            mouse_follows_focus = "off";
             window_placement = "second_child";
             mouse_drop_action = "swap";
             mouse_modifier = "alt";
@@ -112,6 +113,11 @@
             shift + alt - 8 : yabai -m window --space 8
             shift + alt - 9 : yabai -m window --space 9
             shift + alt - 0 : yabai -m window --space 10
+
+            alt - p : yabai -m display --focus next
+            alt - o : yabai -m display --focus prev
+            shift + alt - p : yabai -m window --display next
+            shift + alt - o : yabai -m window --display prev
 
             alt - f : yabai -m window --toggle zoom-fullscreen
 
