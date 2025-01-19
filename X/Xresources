@@ -111,7 +111,7 @@ xterm*color14:                 S_base1
 xterm*color15:                 S_base3
 
 xterm*faceName:                Ubuntu Mono
-xterm*faceSize:                14
+xterm*faceSize:                20
 xterm*eightBitInput:           false
 xterm*metaSendsEscape:         true
 xterm*saveLines:               10240
@@ -122,4 +122,4 @@ xterm*highlightSelection:      true
 xterm*termName:                xterm-256color
 
 ! emacs config
-Emacs.font: Ubuntu Mono-14
+Emacs.font: Ubuntu Mono-20
