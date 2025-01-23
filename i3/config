@@ -11,7 +11,7 @@
 
 set $mod Mod4
 
-font pango:Ubuntu Mono 14
+font pango:Ubuntu Mono 16
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
