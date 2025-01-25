@@ -37,7 +37,7 @@
 ! #define S_base3         #002b36
 
 ! Xft font configurations (affects emacs)
-Xft.dpi:        96
+Xft.dpi:        192
 Xft.antialias:  true
 Xft.hinting:    true
 Xft.rgba:       rgb
@@ -111,7 +111,7 @@ xterm*color14:                 S_base1
 xterm*color15:                 S_base3
 
 xterm*faceName:                Ubuntu Mono
-xterm*faceSize:                20
+xterm*faceSize:                10
 xterm*eightBitInput:           false
 xterm*metaSendsEscape:         true
 xterm*saveLines:               10240
@@ -122,4 +122,4 @@ xterm*highlightSelection:      true
 xterm*termName:                xterm-256color
 
 ! emacs config
-Emacs.font: Ubuntu Mono-20
+Emacs.font: Ubuntu Mono-10
