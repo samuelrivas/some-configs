@@ -1,0 +1,4 @@
+[global]
+scale = 0
+origin = top-right
+offset = (10, 0)
