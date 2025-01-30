@@ -171,6 +171,7 @@ bindsym $mod+b workspace back_and_forth
 
 bindsym $mod+p move workspace to output up
 bindsym $mod+o move workspace to output down
+bindsym $mod+Shift+d exec dunstctl close
 
 # Programs
 # --------
