@@ -160,7 +160,7 @@ bar {
 # Custom bindings
 # ---------------
 
-#bindsym $mod+F10 exec xautolock -locknow
+bindsym $mod+F10 exec i3lock --color 000000
 bindsym XF86AudioMute exec pulsemixer --toggle-mute
 bindsym XF86AudioRaiseVolume exec pulsemixer --change-volume +5
 bindsym XF86AudioLowerVolume exec pulsemixer --change-volume -5
