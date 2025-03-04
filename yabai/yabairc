@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+yabai -m config \
+      layout bsp \
+      mouse_follows_focus off \
+      window_placement second_child \
+      mouse_drop_action swap \
+      mouse_modifier alt \
+      mouse_action1 move
+
+yabai -m rule --add app="^System Settings$" manage=off
