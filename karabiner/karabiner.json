@@ -14,7 +14,7 @@
                                             "^org\\.gnu\\.Emacs$",
                                             "^com\\.microsoft\\.VSCode(Insiders)?$"
                                         ],
-                                        "file_paths": ["/alacritty$"],
+                                        "file_paths": ["/alacritty$", "/MacOS/Cursor$"],
                                         "type": "frontmost_application_unless"
                                     }
                                 ],
@@ -32,7 +32,7 @@
                                             "^org\\.gnu\\.Emacs$",
                                             "^com\\.microsoft\\.VSCode(Insiders)?$"
                                         ],
-                                        "file_paths": ["/alacritty$"],
+                                        "file_paths": ["/alacritty$", "/MacOS/Cursor$"],
                                         "type": "frontmost_application_unless"
                                     }
                                 ],
@@ -48,7 +48,8 @@
                 ]
             },
             "name": "Swap control and command",
-            "selected": true
+            "selected": true,
+            "virtual_hid_keyboard": { "keyboard_type_v2": "iso" }
         }
     ]
 }
