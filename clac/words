@@ -1,0 +1,3 @@
+pi 3.14159265358979323846
+sqrt "0.5 ^"
+round-to "swap . 10 swap ^ , swap dup . * round , /"
