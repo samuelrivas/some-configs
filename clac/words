@@ -1,3 +1,5 @@
-pi 3.14159265358979323846
+pi "-1 acos"
 sqrt "0.5 ^"
 round-to "swap . 10 swap ^ , swap dup . * round , /"
+deg-to-rad "180 / pi *"
+rad-to-deg "pi / 180 *"
