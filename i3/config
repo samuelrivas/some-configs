@@ -17,7 +17,7 @@ font pango:Ubuntu Mono 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xterm
+bindsym $mod+Return exec termite
 
 # kill focused window
 bindsym $mod+Shift+Q kill
