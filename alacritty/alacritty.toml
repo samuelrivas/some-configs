@@ -1,0 +1,8 @@
+general.import = [
+       "~/.config/alacritty/solarized.toml",
+  ]
+
+[font]
+size = 10
+normal = { family = "Ubuntu Mono", style = "Regular" }
+
