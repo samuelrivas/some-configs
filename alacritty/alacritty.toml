@@ -3,6 +3,5 @@ general.import = [
   ]
 
 [font]
-size = 10
-normal = { family = "Ubuntu Mono", style = "Regular" }
+size = 9
 
