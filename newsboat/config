@@ -1,0 +1,18 @@
+browser firefox
+
+# Color theme (solarized)
+color background         default   default
+color listnormal         default   default
+color listnormal_unread  color250   default
+color listfocus          black     yellow
+color listfocus_unread   black     yellow
+color info               default   black
+color article            default   default
+
+highlight article "^(Title):.*$" blue default
+highlight article "https?://[^ ]+" red default
+highlight article "\\[image\\ [0-9]+\\]" green default
+
+# Emacsy bindings
+bind <C-p> everywhere up
+bind <C-n> everywhere down
