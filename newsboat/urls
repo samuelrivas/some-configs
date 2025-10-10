@@ -1,5 +1,6 @@
 "query:Unread articles:unread = \"yes\""
 "query:Unread tech articles:unread = \"yes\" and tags # \"tech\""
+"query:Unread science articles:unread = \"yes\" and tags # \"science\""
 https://bcantrill.dtrace.org/index.xml tech
 https://words.filippo.io/rss/ tech
 https://ahl.dtrace.org/feed/feed.xml tech
