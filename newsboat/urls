@@ -1,5 +1,6 @@
 "query:Unread articles:unread = \"yes\""
 "query:Unread tech articles:unread = \"yes\" and tags # \"tech\""
+"query:Unread haskell articles:unread = \"yes\" and tags # \"haskell\""
 "query:Unread science articles:unread = \"yes\" and tags # \"science\""
 https://bcantrill.dtrace.org/index.xml tech
 https://words.filippo.io/rss/ tech
@@ -15,8 +16,9 @@ https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science science
 https://www.quantamagazine.org/feed/ science
 https://www.nature.com/nature.rss science
 https://www.sciencedaily.com/rss/top.xml science
-https://discourse.haskell.org/c/announcements/6.rss tech haskell
+https://discourse.haskell.org/c/announcements/6.rss haskell
 https://iacgm.com/index.xml tech
 https://chrispenner.ca/atom.xml tech haskell
 https://sigusr2.net/feed.xml tech
 https://ruudvanasseldonk.com/feed.xml tech
+https://blog.yossarian.net/feed.xml tech
