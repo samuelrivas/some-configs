@@ -2,27 +2,28 @@
 "query:Unread tech articles:unread = \"yes\" and tags # \"tech\""
 "query:Unread haskell articles:unread = \"yes\" and tags # \"haskell\""
 "query:Unread science articles:unread = \"yes\" and tags # \"science\""
-https://bcantrill.dtrace.org/index.xml tech
-https://words.filippo.io/rss/ tech
-https://ahl.dtrace.org/feed/feed.xml tech
-https://serokell.io/blog.rss.xml tech
-https://fly.io/blog/feed.xml tech
-https://www.tweag.io/rss.xml tech
-https://danluu.com/atom.xml tech
-https://ourworldindata.org/atom.xml
-https://ourworldindata.org/atom-data-insights.xml
-https://www.science.org/rss/news_current.xml science
-https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science science
-https://www.quantamagazine.org/feed/ science
-https://www.nature.com/nature.rss science
-https://www.sciencedaily.com/rss/top.xml science
-https://discourse.haskell.org/c/announcements/6.rss haskell
-https://iacgm.com/index.xml tech
-https://chrispenner.ca/atom.xml tech haskell
-https://sigusr2.net/feed.xml tech
-https://ruudvanasseldonk.com/feed.xml tech
-https://blog.yossarian.net/feed.xml tech
-https://lexi-lambda.github.io/feeds/all.atom.xml tech haskell
 http://www.stephendiehl.com/feed.xml tech haskell
+https://ahl.dtrace.org/feed/feed.xml tech
+https://bcantrill.dtrace.org/index.xml tech
+https://blog.yossarian.net/feed.xml tech
+https://chrispenner.ca/atom.xml tech haskell
+https://chshersh.com/atom.xml tech haskell
+https://danluu.com/atom.xml tech
+https://discourse.haskell.org/c/announcements/6.rss haskell
+https://fly.io/blog/feed.xml tech
+https://gilmi.me/blog/atom.xml tech haskell
+https://iacgm.com/index.xml tech
+https://lexi-lambda.github.io/feeds/all.atom.xml tech haskell
 https://lobste.rs/t/haskell.rss tech haskell
-https://chshersh.com/index.html tech haskell
+https://ourworldindata.org/atom-data-insights.xml
+https://ourworldindata.org/atom.xml
+https://ruudvanasseldonk.com/feed.xml tech
+https://serokell.io/blog.rss.xml tech
+https://sigusr2.net/feed.xml tech
+https://words.filippo.io/rss/ tech
+https://www.nature.com/nature.rss science
+https://www.quantamagazine.org/feed/ science
+https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science science
+https://www.science.org/rss/news_current.xml science
+https://www.sciencedaily.com/rss/top.xml science
+https://www.tweag.io/rss.xml tech
