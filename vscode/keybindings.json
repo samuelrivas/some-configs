@@ -1,11 +1,11 @@
 // Place your key bindings in this file to override the defaults
 [
     {
-        "key": "alt+;",
+        "key": "cmd+;",
         "command": "editor.action.commentLine"
     },
     {
-        "key": "alt+.",
+        "key": "cmd+.",
         "command": "editor.action.revealDefinition",
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
     },
@@ -15,7 +15,7 @@
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
     },
     {
-        "key": "alt+,",
+        "key": "cmd+,",
         "command": "workbench.action.navigateBack",
         "when": "canNavigateBack"
     },
@@ -37,5 +37,9 @@
         "key": "alt+q",
         "command": "-rewrap.rewrapComment",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+i",
+        "command": "composerMode.agent"
     }
 ]

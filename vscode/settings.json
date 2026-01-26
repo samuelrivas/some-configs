@@ -1,39 +1,68 @@
 {
-    "emacs-mcx.strictEmacsMove": true,
-    "security.workspace.trust.untrustedFiles": "open",
-    "github.copilot.enable": {
-        "plaintext": "true",
-        "markdown": "true"
-    },
-    "nix.serverSettings": {
-        "nil": {
-            "formatting": {
-                "command": ["alejandra"]
-            }
-        }
-    },
-    "nix.formatterPath": "alejandra",
-    "nix.serverPath": "nil",
-    "nix.enableLanguageServer": true,
-    "editor.guides.indentation": false,
-    "editor.lineNumbers": "off",
-    "editor.minimap.enabled": false,
-    "window.menuBarVisibility": "toggle",
-    "python.languageServer": "Pylance",
-    "workbench.colorTheme": "Solarized Dark",
-    "workbench.editor.showTabs": "single",
-    "workbench.activityBar.location": "hidden",
-    "editor.wordWrap": "on",
-    "editor.renderWhitespace": "trailing",
-    "editor.formatOnSaveMode": "modifications",
-    "editor.formatOnSave": true,
-    "rewrap.wrappingColumn": 80,
-    "emacs-mcx.useMetaPrefixMacCmd": true,
-    "cSpell.userWords": [
-        "spacelift"
-    ],
-    "window.restoreWindows": "none",
-    "window.openFoldersInNewWindow": "on",
-    "editor.fontSize": 13,
-    "opa.dependency_paths.opa": "/Users/s.rivas-gonzalez/opa"
+	"cSpell.userWords": [
+		"spacelift"
+	],
+	"editor.fontSize":               13,
+	"editor.formatOnSave":           true,
+	"editor.formatOnSaveMode":       "modifications",
+	"editor.guides.indentation":     false,
+	"editor.lineNumbers":            "off",
+	"editor.minimap.enabled":        false,
+	"editor.renderWhitespace":       "trailing",
+	"editor.wordWrap":               "on",
+	"emacs-mcx.strictEmacsMove":     true,
+	"emacs-mcx.useMetaPrefixMacCmd": true,
+	"files.insertFinalNewline":      true,
+	"files.trimFinalNewlines":       true,
+	"git.autofetch":                 true,
+	"git.enableSmartCommit":         true,
+	"git.rebaseWhenSync":            true,
+	"github.copilot.enable": {
+		"markdown":  "true",
+		"plaintext": "true"
+	},
+	"github.copilot.selectedCompletionModel": "gpt-4o-copilot",
+	"nix.enableLanguageServer":               true,
+	"nix.formatterPath":                      "alejandra",
+	"nix.serverPath":                         "nil",
+	"nix.serverSettings": {
+		"nil": {
+			"formatting": {
+				"command": [
+					"alejandra"
+				]
+			}
+		}
+	},
+	"npm.packageManager":                      "yarn",
+	"opa.dependency_paths.opa":                "/Users/s.rivas-gonzalez/opa",
+	"python.languageServer":                   "Pylance",
+	"rewrap.wrappingColumn":                   80,
+	"security.workspace.trust.untrustedFiles": "open",
+	"window.menuBarVisibility":                "toggle",
+	"window.openFoldersInNewWindow":           "on",
+	"window.restoreWindows":                   "none",
+	"workbench.activityBar.location":          "hidden",
+	"workbench.colorTheme":                    "Solarized Dark",
+	"workbench.editor.showTabs":               "single",
+	"workbench.startupEditor":                 "none",
+	"mcpManager.servers": [
+		{
+			"command": "kep mcp",
+			"enabled": true,
+			"name":    "klarna-local-mcp",
+			"type":    "process"
+		}
+	],
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"go.alternateTools":        {"golangci-lint": "golangci-lint"},
+	"go.lintFlags":             ["--fast-only"],
+	"go.lintTool":              "golangci-lint",
+	"gopls":                    {"formatting.gofumpt": true, "ui.semanticTokens": true},
+	"chat.agent.enabled":       true,
+	"telemetry.telemetryLevel": "off",
+	"github-enterprise.uri":    "https://klarna.ghe.com/",
+	"github.copilot.advanced":  {"authProvider": "github-enterprise"}
 }
