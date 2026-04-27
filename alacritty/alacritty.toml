@@ -28,6 +28,9 @@ bindings = [
   { key = "=", mods = "Control", action = "IncreaseFontSize" },
   { key = "-", mods = "Control", action = "DecreaseFontSize" },
   { key = "0", mods = "Control", action = "ResetFontSize" },
+
+  # For claude to accept new lines
+  { key = "Return", mods = "Shift", chars = "\x1b[13;2u" },
 ]
 
 [mouse]
